@@ -5,6 +5,13 @@ class Cardnews extends HTMLElement {
     const shadow = this.attachShadow({ mode: "open" });
     shadow.innerHTML = "<h1>Hello</h1>"
   }
+  build(){
+
+  }
+
+  styles(){
+    
+  }
 }
 
 customElements.define("card-news", Cardnews);
