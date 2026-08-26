@@ -3,15 +3,24 @@ class Cardnews extends HTMLElement {
     super();
 
     const shadow = this.attachShadow({ mode: "open" });
-    shadow.innerHTML = "<h1>Hello</h1>"
+    shadow.appendChild(this.build);
+    shadow.appendChild(this.styles);
   }
-  build(){
+  build() {
+    const componetRoot = document.createElement("div");
+    componetRoot.setAttribute("class","card");
 
+    const cardLeft = document.createElement("div");
+    cardLeft.setAttribute("class", )
+    const cardRight = document.createElement("div");
+
+    componetRoot.appendChild(cardLeft);
+    componetRoot.appendChild(cardRight);
+
+    return componetRoot;
   }
 
-  styles(){
-    
-  }
+  styles() {}
 }
 
 customElements.define("card-news", Cardnews);
