@@ -1,3 +1,5 @@
+
+
 /**
  * Variáveis
  */
@@ -43,3 +45,24 @@ let dados2: Array<string> = ["André", "Maria", "José"]; //array de strings, ou
 
 //arrays multi types
 let infos: (string | number)[] = [30, "André", 1.75]; //array de strings e números
+
+/**
+ * Tuplas - array com tamanho e tipos fixos 
+ */
+
+let boleto: [string, number, number] = ["agua", 199.9, 123456789]; //tupla com 3 elementos, sendo o primeiro uma string, o segundo um número e o terceiro um número
+
+
+/**
+ * arrays métodos
+ */
+dados.map((item) => `O nome é ${item}`); //map é um método que percorre o array e retorna um novo array com os valores modificados
+
+/**
+ * datas
+ */
+
+dados.pop(); //pop é um método que remove o último elemento do array
+let aniversario: Date = new Date("2026-09-02 05:00"); //Date é um tipo que representa uma data e hora
+console.log(aniversario.toString()); //toString é um método que converte a data para string
+
