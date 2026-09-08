@@ -36,8 +36,6 @@ resumindo uso type para tipar variáveis e funções, e interface para criar est
 dados que podem ser estendidas, ou seja contratos que podem ser implementados por classes ou objetos.
 */
 class Pessoa {
-    id;
-    name;
     constructor(id, name) {
         this.id = id;
         this.name = name;

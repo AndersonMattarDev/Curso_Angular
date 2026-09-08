@@ -4,6 +4,8 @@
     // File Layout
    "rootDir": "./src",
    "outDir": "./build",
+   "experimentalDecorators": true,
+  "useDefineForClassFields": false,
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
