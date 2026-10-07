@@ -11,4 +11,9 @@ import { CheckSample } from './check-sample/check-sample';
 })
 export class App {
   protected readonly title = signal('life-cicle');
+	private isAliveCheckSample = Boolean(true);
+
+	disposeCheckSample() {
+		this.isAliveCheckSample = false;
+	}
 }

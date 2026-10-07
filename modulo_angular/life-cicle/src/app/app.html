@@ -1,0 +1,9 @@
+<h1>My app</h1>
+<app-title nome="Produto 01"></app-title>
+<app-title nome="Produto 02"></app-title>
+@if (isAliveCheckSample) {
+  <app-check-sample></app-check-sample>
+}
+<br>
+<button (click)="disposeCheckSample()">Destruir</button>
+<router-outlet />
