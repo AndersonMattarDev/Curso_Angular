@@ -1,0 +1,45 @@
+<h1>My App</h1>
+<p>card works!</p>
+<button>Hello World</button>
+
+<ul>
+  @for (p of produtos; track p; let i = $index) {
+    <li (click)="remover(i)">
+      {{ i }} - {{ p }}
+    </li>
+  }
+  <button (click)="adicionar()">Adicionar</button>
+</ul>
+
+<div>
+  @switch (menuType) {
+    @case ('user') {
+      <ul>
+        <li>editar perfil</li>
+        <li>adicionar cartão</li>
+      </ul>
+    }
+    @case ('admin') {
+      <ul>
+        <li>editar perfil</li>
+        <li>adicionar cartão</li>
+        <li>gerenciar usuários</li>
+      </ul>
+    }
+    @case ('superuser') {
+      <ul>
+        <li>editar perfil</li>
+        <li>adicionar cartão</li>
+        <li>gerenciar usuários</li>
+        <li>gerenciar admins</li>
+      </ul>
+    }
+    @default {
+      <p>Nenhum menu para este tipo</p>
+    }
+  }
+</div>
+
+
+
+
